@@ -5,9 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch a Sketch</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
 </head>
 <body>
-    
+    <main class="sketch">
+        <h1 class="sketch__title">
+            Etch-a-Sketch
+        </h1>
+        <div class="sketch__control-left">
+            <img src="assets/img/sketchButton.png" alt="sketch round button" class="sketch__control-img">
+        </div>
+        <div class="sketch__control-right">
+            <img src="assets/img/sketchButton.png" alt="sketch round button" class="sketch__control-img">
+        </div>
+        <button class="sketch__button-reset">
+            RESET
+        </button>
+        <input class="sketch__input-grid-size" type="range" name="grid-size" id="size">
+        <label class="sketch__label-grid-size" for="size">Grid size: 24</label>
+        <div class="sketch__container">
+            <div class="sketch__box"></div>
+            <div class="sketch__box"></div>
+            <div class="sketch__box"></div>
+            <div class="sketch__box"></div>
+            <div class="sketch__box"></div>
+            <div class="sketch__box"></div>
+            <div class="sketch__box"></div>
+            <div class="sketch__box"></div>
+            <div class="sketch__box"></div>
+            <div class="sketch__box"></div>
+            <div class="sketch__box"></div>
+            <div class="sketch__box"></div>
+            <div class="sketch__box"></div>
+            <div class="sketch__box"></div>
+            <div class="sketch__box"></div>
+            <div class="sketch__box"></div>
+        </div>
+    </main>
 </body>
 </html>
