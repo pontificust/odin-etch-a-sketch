@@ -506,7 +506,7 @@ body {
     max-width: 350px;
     max-height: 100px;
     border-radius: 10px;
-    font-size: 3vw;
+    font-size: 2vw;
     margin: 0 auto;
     text-align: center;
     clip-path: polygon(
@@ -546,8 +546,10 @@ body {
 }
 
 .sketch__cell {
-  width: calc(50vw - 8px/var(--cell-size));
-  height: calc(50vw - 8px/var(--cell-size));
+  width: calc(50vw/var(--cell-size));
+  max-width: calc(600px/var(--cell-size));
+  max-height: calc(600px/var(--cell-size));
+  height: calc(50vw/var(--cell-size));
 }
 
 .sketch__control-left img,
