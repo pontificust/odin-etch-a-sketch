@@ -11,7 +11,7 @@ export const render = () => {
 
     const clearColor = () => {
         const sketchCells = document.querySelectorAll('.sketch__cell');
-        sketchCells.forEach(cell => cell.classList.remove(`add-color${cell.id}`));
+        sketchCells.forEach(cell => cell.classList.remove(`add-color-${cell.id}`));
     }
 
     const addSketchCells = () => {
