@@ -546,8 +546,8 @@ body {
 }
 
 .sketch__cell {
-  width: calc(50vw/var(--cell-size));
-  height: calc(50vw/var(--cell-size));
+  width: calc(50vw - 8px/var(--cell-size));
+  height: calc(50vw - 8px/var(--cell-size));
 }
 
 .sketch__control-left img,
