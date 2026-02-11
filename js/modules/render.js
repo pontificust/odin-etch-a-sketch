@@ -34,9 +34,10 @@ export const render = () => {
 
     const draw = (e) => {
         const id = e.target.id;
-        if(e.target !== sketchContainer && id !== 10){
-            e.target.classList.remove(`add-color${id}`)
-            e.target.classList.add(`add-color${id}`);
+        if(e.target !== sketchContainer && id < 10){
+            e.target.classList.remove(`add-color-${id}`)
+            e.target.classList.add(`add-color-${+id+1}`);
+            e.target.id = 1 + +id;
         }
     }
 
