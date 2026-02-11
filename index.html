@@ -18,24 +18,26 @@
 </head>
 <body>
     <main class="sketch">
-        <button class="sketch__button-reset">
-            RESET
-        </button>
-        <div class="sketch__container">
-
-        </div>
-        <div class="sketch__controls">
-            <div class="sketch__control-left">
-                <img src="assets/img/sketchButton.png" alt="sketch round button" class="sketch__control-img">
+        <section class="sketch__wrapper">
+            <button class="sketch__button-reset">
+                RESET
+            </button>
+            <div class="sketch__container">
+    
             </div>
-            <div class="sketch__control-grid-size">
-                <input class="sketch__input-grid-size" value="16" min="16" max="64" step="8" type="range" name="grid-size" id="size">
-                <label class="sketch__label-grid-size" min="16" max="64" step="8" for="size">24</label>
+            <div class="sketch__controls">
+                <div class="sketch__control-left">
+                    <img src="assets/img/sketchButton.png" alt="sketch round button" class="sketch__control-img">
+                </div>
+                <div class="sketch__control-grid-size">
+                    <input class="sketch__input-grid-size" value="16" min="16" max="64" step="8" type="range" name="grid-size" id="size">
+                    <label class="sketch__label-grid-size" min="16" max="64" step="8" for="size">24</label>
+                </div>
+                <div class="sketch__control-right">
+                    <img src="assets/img/sketchButton.png" alt="sketch round button" class="sketch__control-img">
+                </div>
             </div>
-            <div class="sketch__control-right">
-                <img src="assets/img/sketchButton.png" alt="sketch round button" class="sketch__control-img">
-            </div>
-        </div>
+        </section>
     </main>
     <script src="js/main.js" type="module"></script>
 </body>
