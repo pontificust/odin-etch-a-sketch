@@ -465,7 +465,6 @@ html {
   --color-player-cyan: #00f2ff;
   --color-score-amber: #ffcc33;
   --color-button-text: #ffffff;
-  --box-size: 16;
 }
 
 body {
@@ -519,12 +518,13 @@ body {
     background-color: var(--color-battle-arena);
     display: flex;
     flex-wrap: wrap;
+    --cell-size:16;
 }
 
 .sketch__cell {
   border: 1px solid #ffffff;
-  width: calc(50vw/var(--box-size));
-  height: calc(50vw/var(--box-size));
+  width: calc(50vw/var(--cell-size));
+  height: calc(50vw/var(--cell-size));
 
 }
 
