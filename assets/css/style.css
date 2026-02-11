@@ -606,6 +606,42 @@ input[type="range"] {
     text-shadow: 0 0 5px #00F2FF, 0 0 10px #00F2FF, 0 0 20px #00A3FF;
 }
 
-.add-color {
-  background-color: #00F2FF;
+.add-color-1{
+  background-color: rgba(0, 242, 255, 0.1);
+}
+
+.add-color-2{
+  background-color: rgba(0, 242, 255, 0.2);
+}
+
+.add-color-3{
+  background-color: rgba(0, 242, 255, 0.3);
+}
+
+.add-color-4{
+  background-color: rgba(0, 242, 255, 0.4);
+}
+
+.add-color-5{
+  background-color: rgba(0, 242, 255, 0.5);
+}
+
+.add-color-6{
+  background-color: rgba(0, 242, 255, 0.6);
+}
+
+.add-color-7{
+  background-color: rgba(0, 242, 255, 0.7);
+}
+
+.add-color-8{
+  background-color: rgba(0, 242, 255, 0.8);
+}
+
+.add-color-9{
+  background-color: rgba(0, 242, 255, 0.9);
+}
+
+.add-color-10{
+  background-color: rgba(0, 242, 255, 1);
 }

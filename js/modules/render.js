@@ -19,6 +19,7 @@ export const render = () => {
         for(let i = 0; i < cellCount ** 2; i += 1) {
             const sketchCell = document.createElement('div');
             sketchCell.classList.add('sketch__cell');
+            sketchCell.id = '0';
             sketchContainer.appendChild(sketchCell);
         }
     }
@@ -32,8 +33,10 @@ export const render = () => {
     }
 
     const draw = (e) => {
-        if(e.target !== sketchContainer){
-            e.target.classList.add('add-color');
+        const id = e.target.id;
+        if(e.target !== sketchContainer && id !== 10){
+            e.target.classList.remove(`add-color${id}`)
+            e.target.classList.add(`add-color${id}`);
         }
     }
 
