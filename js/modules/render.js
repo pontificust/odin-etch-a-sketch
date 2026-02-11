@@ -23,5 +23,11 @@ export const render = () => {
         addSketchCells();
     }
 
+    const draw = (e) => {
+        e.stopPropagation();
+        e.target.classList.add('add-color');
+    }
+
     sketchGridResize.addEventListener('input', gridResize);
+    sketchContainer.addEventListener('mouseover', draw);
 }

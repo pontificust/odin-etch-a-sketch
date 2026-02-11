@@ -522,7 +522,6 @@ body {
 }
 
 .sketch__cell {
-  border: 1px solid #ffffff;
   width: calc(50vw/var(--cell-size));
   height: calc(50vw/var(--cell-size));
 
@@ -554,4 +553,8 @@ body {
 
 .sketch__label-grid-size {
     font-size: 1rem;
+}
+
+.add-color {
+  background-color: gray;
 }
