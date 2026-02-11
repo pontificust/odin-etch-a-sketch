@@ -456,12 +456,8 @@ html {
   --color-background-main: #1a0b2e;
   --color-scoreboard-frames: #2c2c2e;
   --color-battle-arena: #0a0a0a;
-  --color-rock-top: #e63946;
-  --color-rock-bottom: #9b2226;
-  --color-paper-top: #3a86ff;
-  --color-paper-bottom: #023e8a;
-  --color-scissors-top: #ffbe0b;
-  --color-scissors-bottom: #fb5607;
+  --color-red-top: #e63946;
+  --color-red-bottom: #9b2226;
   --color-player-cyan: #00f2ff;
   --color-score-amber: #ffcc33;
   --color-button-text: #ffffff;
@@ -479,7 +475,7 @@ body {
 }
 
 .sketch {
-  filter: drop-shadow(0 50px 0 var(--color-rock-bottom));
+  filter: drop-shadow(0 50px 0 var(--color-red-bottom));
 }
 
 .sketch__wrapper {
@@ -487,7 +483,7 @@ body {
   height: 80vw;
   max-width: 900px;
   max-height: 900px;
-  background-color: var(--color-rock-top);
+  background-color: var(--color-red-top);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -520,6 +516,13 @@ body {
     0 calc(100% - 10px), 0 10px
 );
     text-shadow: 0 0 5px #00F2FF, 0 0 10px #00F2FF, 0 0 20px #00A3FF;
+    transition: all 0.5s linear;
+}
+
+.sketch__button-reset:hover{
+  cursor: pointer;
+  transform: translateY(4px);
+  opacity: 0.8;
 }
 
 .sketch__controls {
@@ -553,17 +556,42 @@ body {
     max-width: 100px;
 }
 
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+  border-radius: 0;
+  -webkit-appearance: none;
+  width: 1.5em;
+  height: 1.5em;
+  background-color: var(--color-button-text);
+  box-shadow: 0 0 5px #00F2FF, 0 0 10px #00F2FF, 0 0 20px #00A3FF;
+}
+
+input[type="range"]::-webkit-slider-runnable-track{
+  width: 1.5em;
+  height: 1.5em;
+  background-color: var(--color-battle-arena);
+  box-shadow: inset 1px 1px 5px rgba(0,0,0,0.8);
+}
+
 .sketch__control-grid-size {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    background-color: var(--color-background-main);
     border-radius: 10px;
     width: 30vw;
     height: 6vw;
     max-width: 280px;
     max-height: 60px;
+}
+
+input[type="range"] {
+  cursor: pointer;
 }
 
 .sketch__input-grid-size {
