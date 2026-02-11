@@ -479,23 +479,27 @@ body {
 }
 
 .sketch {
-    width: 80vw;
-    height: 80vw;
-    max-width: 900px;
-    max-height: 900px;
-    background-color: var(--color-rock-top);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    clip-path: polygon(
-    10px 0, calc(100% - 10px) 0, 
-    100% 10px, 100% calc(100% - 10px), 
-    calc(100% - 10px) 100%, 10px 100%, 
-    0 calc(100% - 10px), 0 10px
-);
-    filter: drop-shadow(0 50px 0 var(--color-rock-bottom));
+  filter: drop-shadow(0 50px 0 var(--color-rock-bottom));
+}
 
+.sketch__wrapper {
+  width: 80vw;
+  height: 80vw;
+  max-width: 900px;
+  max-height: 900px;
+  background-color: var(--color-rock-top);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  clip-path: polygon(
+  10px 0, calc(100% - 10px) 0, 
+  100% 10px, 100% calc(100% - 10px), 
+  calc(100% - 10px) 100%, 10px 100%, 
+  0 calc(100% - 10px), 0 10px
+  );
+  border-bottom: 8px solid #b32d36;
+  
 }
 
 .sketch__button-reset {
@@ -515,6 +519,7 @@ body {
     calc(100% - 10px) 100%, 10px 100%, 
     0 calc(100% - 10px), 0 10px
 );
+    text-shadow: 0 0 5px #00F2FF, 0 0 10px #00F2FF, 0 0 20px #00A3FF;
 }
 
 .sketch__controls {
@@ -533,6 +538,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     --cell-size:16;
+    box-shadow: inset 4px 4px 10px rgba(0,0,0,0.8);
 }
 
 .sketch__cell {
@@ -552,7 +558,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    background-color: #2c2c2e;
+    background-color: var(--color-background-main);
     border-radius: 10px;
     width: 30vw;
     height: 6vw;
@@ -567,8 +573,9 @@ body {
 
 .sketch__label-grid-size {
     font-size: 1rem;
+    text-shadow: 0 0 5px #00F2FF, 0 0 10px #00F2FF, 0 0 20px #00A3FF;
 }
 
 .add-color {
-  background-color: gray;
+  background-color: #00F2FF;
 }
